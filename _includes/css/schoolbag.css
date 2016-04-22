@@ -309,7 +309,7 @@ header .intro-text .intro-heading {
         margin-bottom: 25px;
         font-size: 36px;
         line-height: 40px;
-        font-weight: 00;
+        font-weight: 100;
     }
 
     header .intro-text .intro-heading {
@@ -321,11 +321,11 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 100px 0;
+    padding: 90px 0;
 }
 
 section h2.section-heading {
-    margin-top: 0;
+    margin-top: 90px;
     margin-bottom: 80px;
     font-size: 40px;
     font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -345,13 +345,43 @@ section h3.section-subheading {
         padding: 90px 0;
     }
 }
-section#howitworks  {
-    /*background-attachment: scroll;*/
-    /*background-size: contain;*/
-    background-position: right 200px;
-    background-image: url(img/howitworks-surface.png);
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
+section#howitworks {
+    position: relative;
+    overflow: hidden;
+}
+section#howitworks p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+section#howitworks .btn {
+    margin-top: 40px;
+}
+.howitworks-photo  {
+    position: absolute;
+    width: 50%;
+    top: 300px;
+    right:0;
+    min-height: 300px;
+    height: 100%;
+}
+@media(min-width:768px) {
+    section#benefits img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+section#about {
+    position: relative;
+    overflow: hidden;
+}
+.about-photo  {
+    position: absolute;
+    width: 50%;
+    top: 300px;
+    right:0;
+    min-height: 200px;
+    height: 350px;
     overflow: hidden;
 }
 
@@ -597,4 +627,27 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.color.primary }};
+}
+
+/* Google Maps */
+#map {
+    height:350px;
+    width:100%;
+}
+.gm-style-iw * {
+    display: block;
+    width: auto;
+}
+
+.gm-style-iw h4, 
+.gm-style-iw p {
+    margin: 0;
+    padding: 0;
+}
+.gm-style-iw h4 {
+    margin-bottom: 20px;
+}
+.gm-style-iw h4,
+.gm-style-iw a {
+    color: #{{ site.color.primary }};
 }
