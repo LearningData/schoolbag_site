@@ -1,5 +1,5 @@
-url: 
-baseurl: 
+url:
+baseurl:
 
 # Site settings
 title: Schoolbag
@@ -9,7 +9,7 @@ description: "Learning Data is a subsidiary of The Examcraft Group and has been 
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary: fb8306
-  secondary: fec503  
+  secondary: fec503
   secondary-dark: 333
 
 # Team names, titles and social links
@@ -40,15 +40,13 @@ people:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
+    url: https://twitter.com/Schoolbag4HW
   - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
+    url: https://www.facebook.com/learningdata
+  - title: google-plus
+    url: https://plus.google.com/+LearningdataIe
+  - title: vimeo
+    url: https://vimeo.com/channels/715348
 
 # Postal address (add as many lines as necessary)
 address:

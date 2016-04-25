@@ -142,7 +142,7 @@ fieldset[disabled] .btn-primary.active {
 .open .dropdown-toggle.btn-xl {
     background-image: none;
 }
-.btn-outline, 
+.btn-outline,
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active {
@@ -236,6 +236,10 @@ fieldset[disabled] .btn-xl.active {
     color: #fff;
     background-color: #{{ site.color.secondary }};
 }
+.navbar-default .nav li a.login {
+    background-color: #{{ site.color.primary }};
+}
+
 
 @media(min-width:768px) {
     .navbar-default {
@@ -418,14 +422,8 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: ;
     padding-top: 0;
 }
-
-section#contact .section-heading {
-    color: #fff;
-}
-
 section#contact .form-group {
     margin-bottom: 25px;
 }
@@ -434,11 +432,9 @@ section#contact .form-group input,
 section#contact .form-group textarea {
     padding: 20px;
 }
-
 section#contact .form-group input.form-control {
     height: auto;
 }
-
 section#contact .form-group textarea.form-control {
     height: 236px;
 }
@@ -482,6 +478,28 @@ section#contact:-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c;
+}
+section#contact .contact-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 15px;
+    background-color: #{{ site.color.primary }};
+}
+section#contact .contact-icon .fa {
+    font-size: 24px;
+    color: #fff;
+}
+section#contact .contact-icon .fa.fa-envelope {
+    font-size: 20px;
+}
+section#contact .media {
+    margin-bottom: 70px;
+    margin-left: 20px;
+    line-height: 24px;
+}
+section#contact .media-left {
+    padding-right: 30px;
 }
 
 footer {
@@ -633,13 +651,14 @@ body {
 #map {
     height:350px;
     width:100%;
+    margin-bottom: 80px;
 }
 .gm-style-iw * {
     display: block;
     width: auto;
 }
 
-.gm-style-iw h4, 
+.gm-style-iw h4,
 .gm-style-iw p {
     margin: 0;
     padding: 0;
