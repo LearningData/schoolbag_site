@@ -35,7 +35,9 @@
                                     </div>
                                   <div class="media-body">
                                       <h4 class="media-heading">Location:</h4>
-                                      The Guinness Enterprise Centre <br>Taylor’s Lane, Dublin 8, Ireland
+                                      {% for address in site.address %}
+                                        {{ address.line }}<br>
+                                      {% endfor %}
                                     </div>
                                 </div>
                                 <div class="media">

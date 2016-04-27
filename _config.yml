@@ -9,7 +9,7 @@ description: "Learning Data is a subsidiary of The Examcraft Group and has been 
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary: fb8306
-  secondary: fec503
+  secondary: f47920
   secondary-dark: 333
 
 # Team names, titles and social links
@@ -50,8 +50,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: The Guinness Enterprise Centre, Taylor’s Lane
-  - line: Dublin 8, Ireland
+  - line: The Guinness Enterprise Centre,
+  - line:  Taylor’s Lane - Dublin 8, Ireland
 
 # Build settings
 markdown: kramdown
