@@ -4,6 +4,16 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+//Set height for each section
+function pageHeight() {
+    var wHeight = $( window ).height();
+    console.log (wHeight);
+    $('header, #howitworks, #benefits, #about, #contatct').css('min-height', wHeight);
+}
+pageHeight()
+$(window).resize(function(){
+    pageHeight()
+});
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {

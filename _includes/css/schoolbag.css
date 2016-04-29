@@ -150,6 +150,12 @@ fieldset[disabled] .btn-primary.active {
     border-color: #fff;
     color: #fff;
     background-color: transparent;
+    margin-top: 30px;
+}
+@media(min-width:991px) {
+    .btn-outline {
+        margin-top: 0;
+    }
 }
 
 .btn-xl.disabled,
@@ -206,6 +212,8 @@ fieldset[disabled] .btn-xl.active {
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 .navbar-default.navbar-shrink .nav li a {
     color: #696a6e;
@@ -215,6 +223,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:focus {
     outline: 0;
     color: #{{ site.color.primary }};
+    background-color: transparent;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -229,6 +238,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a:focus {
     font-weight: 600;
     color: #{{ site.color.secondary }};
+    background-color: transparent;
 }
 
 .navbar-default .navbar-nav>.login>a,
@@ -255,11 +265,15 @@ fieldset[disabled] .btn-xl.active {
         -moz-transition: padding .3s;
         transition: padding .3s;
     }
+
     .navbar-default .navbar-brand {
         padding: 7px 15px;
     }
     .navbar-default .navbar-brand img.logo-dark {
         display: none;
+    }
+    .navbar-default .navbar-brand {
+        height: auto;
     }
     .navbar-default .navbar-brand img {
         width: 100%;
@@ -267,11 +281,15 @@ fieldset[disabled] .btn-xl.active {
         -moz-transition: all .3s;
         transition: all .3s;
     }
-
     .navbar-default .navbar-nav>.active>a {
         border-radius: 3px;
     }
-
+    .navbar-default .collapse.navbar-collapse {
+        margin-top: 10px;
+    }
+    .navbar-default.navbar-shrink .collapse.navbar-collapse {
+        margin-top: 5px;
+    }
     .navbar-default.navbar-shrink {
         padding: 10px 0;
         background-color: rgba(255, 255, 255, .9);
@@ -286,8 +304,17 @@ fieldset[disabled] .btn-xl.active {
         width: 80%;
     }
 }
+@media(min-width:991px) {
+    .navbar-default .nav li a,
+    .navbar-default.navbar-shrink .nav li a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 
 header {
+    width: 100%;
     text-align: center;
     color: #fff;
     background-attachment: scroll;
@@ -321,7 +348,6 @@ header .intro-text .intro-heading {
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
-        padding-bottom: 200px;
     }
 
     header .intro-text .intro-lead-in {
@@ -340,23 +366,14 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 90px 0;
+    padding: 70px 0;
 }
 
 section h2.section-heading {
-    margin-top: 90px;
+    margin-top: 50px;
     margin-bottom: 80px;
     font-size: 40px;
     font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-section h3.section-subheading {
-    margin-bottom: 75px;
-    text-transform: none;
-    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
 }
 
 @media(min-width:768px) {
@@ -377,17 +394,29 @@ section#howitworks .btn {
 }
 .howitworks-photo  {
     position: absolute;
-    width: 50%;
+    width: 40%;
     top: 300px;
     right:0;
     min-height: 300px;
     height: 100%;
+}
+@media(min-width:991px) {
+    .howitworks-photo  {
+        width: 50%;
+    }
+
 }
 @media(min-width:768px) {
     section#benefits img {
         width: 100px;
         height: auto;
     }
+}
+#integrates {
+    padding: 70px 0 90px;
+}
+#integrates h2.section-heading {
+    margin-bottom: 40px;
 }
 
 section#about {
@@ -396,14 +425,21 @@ section#about {
 }
 .about-photo  {
     position: absolute;
-    width: 50%;
-    top: 300px;
+    width: 30%;
+    top: 265px;
     right:0;
     min-height: 200px;
     height: 350px;
     overflow: hidden;
 }
-
+@media(min-width:991px) {
+    .about-photo  {
+        width: 50%;
+    }
+}
+section#team {
+    padding-bottom: 0;
+}
 .team-member {
     margin-bottom: 50px;
     text-align: center;
@@ -411,7 +447,7 @@ section#about {
 
 .team-member img {
     margin: 0 auto;
-    border: 7px solid #fff;
+    border: 7px solid #f7f7f7;
 }
 
 .team-member h4 {
@@ -433,7 +469,7 @@ section#banner-mkt h3 {
 }
 
 aside.clients img {
-    margin: 50px auto;
+    margin: 50px auto -20px;
 }
 
 section#contact {
@@ -510,8 +546,13 @@ section#contact .contact-icon .fa.fa-envelope {
 }
 section#contact .media {
     margin-bottom: 70px;
-    margin-left: 20px;
+    margin-left: 0;
     line-height: 24px;
+}
+@media(min-width:991px) {
+    section#contact .media {
+        margin-left: 20px;
+    }
 }
 section#contact .media-left {
     padding-right: 30px;
@@ -591,77 +632,6 @@ ul.social-buttons li a:active {
 .btn.active,
 .btn:active:focus {
     outline: 0;
-}
-
-.portfolio-modal .modal-content {
-    padding: 100px 0;
-    min-height: 100%;
-    border: 0;
-    border-radius: 0;
-    text-align: center;
-    background-clip: border-box;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.portfolio-modal .modal-content h2 {
-    margin-bottom: 15px;
-    font-size: 3em;
-}
-
-.portfolio-modal .modal-content p {
-    margin-bottom: 30px;
-}
-
-.portfolio-modal .modal-content p.item-intro {
-    margin: 20px 0 30px;
-    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-style: italic;
-}
-
-.portfolio-modal .modal-content ul.list-inline {
-    margin-top: 0;
-    margin-bottom: 30px;
-}
-
-.portfolio-modal .modal-content img {
-    margin-bottom: 30px;
-}
-
-.portfolio-modal .close-modal {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.portfolio-modal .close-modal:hover {
-    opacity: .3;
-}
-
-.portfolio-modal .close-modal .lr {
-    z-index: 1051;
-    width: 1px;
-    height: 75px;
-    margin-left: 35px;
-    background-color: #222;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.portfolio-modal .close-modal .lr .rl {
-    z-index: 1052;
-    width: 1px;
-    height: 75px;
-    background-color: #222;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
 }
 
 ::-moz-selection {
