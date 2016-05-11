@@ -17,18 +17,22 @@ people:
 - name: Philip O'Callaghan
   pic: 1
   position: Managing Director
+  about: Philip taught for 10 years in Naas CBS and St. David’s CBS, Artane. Since leaving the classroom he has been the managing director of Examcraft, the parent company of Schoolbag.
 
 - name: Stuart Johnson
   pic: 2
   position: Technical Director
+  about: Stuart Johnson holds a PhD in Physics from the University of Edinburgh. After gaining his PGCE teaching qualification from the University of York, he taught for 4 years, first in the UK state system and then in an international school in Spain.
 
 - name: Amanda Ferris
   pic: 3
-  position: Lead Marketer
+  position: Digital Education Product Specialist
+  about: Amanda is a trained primary and secondary school teacher with a passion for educational technology, she provides support and training to our schools and teachers, and is in charge of product testing.
 
 - name: Sidimar Gobbo
   pic: 4
   position: UX / UI Designer
+  about: Sidimar is a self-taught UI/UX designer with a passion for design and technology, he provides the design and digital experience for schoolbag product.
   # social:
   #   - title: twitter
   #     url: #
@@ -56,3 +60,9 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+jekyll-press:
+  exclude: 'atom.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
+  js_options: {}      # js minifier options
+  css_options: {}     # css minifier options
+  html_options: {}    # html minifier options

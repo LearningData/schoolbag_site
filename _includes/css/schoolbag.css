@@ -429,7 +429,7 @@ section#about {
     top: 265px;
     right:0;
     min-height: 200px;
-    height: 350px;
+    height: 250px;
     overflow: hidden;
 }
 @media(min-width:991px) {
