@@ -423,20 +423,6 @@ section#about {
     position: relative;
     overflow: hidden;
 }
-.about-photo  {
-    position: absolute;
-    width: 30%;
-    top: 265px;
-    right:0;
-    min-height: 200px;
-    height: 250px;
-    overflow: hidden;
-}
-@media(min-width:991px) {
-    .about-photo  {
-        width: 50%;
-    }
-}
 section#team {
     padding-bottom: 0;
 }
