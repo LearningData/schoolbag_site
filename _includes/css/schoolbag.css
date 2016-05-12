@@ -153,8 +153,11 @@ fieldset[disabled] .btn-primary.active {
     margin-top: 30px;
 }
 @media(min-width:991px) {
-    .btn-outline {
-        margin-top: 0;
+  .btn-outline,
+  .btn-outline:hover,
+  .btn-outline:focus,
+  .btn-outline:active {
+        margin-top: 20px;
     }
 }
 
@@ -412,6 +415,55 @@ section#howitworks .btn {
         height: auto;
     }
 }
+
+/* block quotes*/
+.div-quote  {
+  display: none;
+}
+.quotes {
+  margin-top: 50px;
+  min-height: 100px;
+}
+.quotes blockquote{
+	background: #fff;
+	padding: 30px;
+  min-height: 150px;
+	border-radius: 5px;
+	box-shadow:
+		inset 0 2px 0 rgba(251, 131, 0, 0.7),
+		0 0 21px rgba(0, 0, 0, 0.3);
+  border-left: none;
+}
+.quotes blockquote p {
+	font-size: 16px;
+	line-height: 24px;
+	text-indent: 90px;
+	position: relative;
+}
+.quotes blockquote p:before{
+	content: '\201C';
+	font-family: serif;
+	font-style: normal;
+	font-weight: 700;
+	position: absolute;
+	font-size: 150px;
+	top: 0px;
+	left: -95px;
+	color: #fb8306;
+	text-shadow: 4px 7px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quotes .mb-attribution {
+	text-align: right;
+	padding: 0 30px 20px 20px;
+	position: relative;
+}
+
+.quotes .mb-author{
+	font-weight: 700;
+	font-size: 18px;
+	color: #fb8306;
+}
 #integrates {
     padding: 70px 0 90px;
 }
@@ -459,7 +511,8 @@ aside.clients img {
 }
 
 section#contact {
-    padding-top: 90px;
+    padding-top: 0;
+    margin-top: 0;
 }
 section#contact .form-group {
     margin-bottom: 25px;
@@ -578,11 +631,10 @@ footer .footer-above h5   {
 footer .footer-above .partner img   {
     margin-bottom: 20px;
 }
-footer span.copyright {
-    text-transform: uppercase;
-    text-transform: none;
-    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 40px;
+footer .copyright img {
+  display: block;
+  float: left;
+  margin: 0 20px 40px 0;
 }
 
 footer ul.quicklinks {
