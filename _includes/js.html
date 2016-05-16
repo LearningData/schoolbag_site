@@ -1,21 +1,24 @@
- <!-- jQuery Version 1.11.0 -->
-    <script src="{{ "/js/jquery-1.11.0.js" | prepend: site.baseurl }}"></script>
+{% if page.layout == 'howitworks' %}
+{% else %}
+<!-- jQuery Version 1.11.0 -->
+   <script src="{{ "/js/jquery-1.11.0.js" | prepend: site.baseurl }}"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+   <!-- Bootstrap Core JavaScript -->
+   <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
+   <!-- Plugin JavaScript -->
+   <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
+   <script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>
+   <script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="{{ "/js/jqBootstrapValidation.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/contact_me.js" | prepend: site.baseurl }}"></script>
+   <!-- Contact Form JavaScript -->
+   <script src="{{ "/js/jqBootstrapValidation.js" | prepend: site.baseurl }}"></script>
+   <script src="{{ "/js/contact_me.js" | prepend: site.baseurl }}"></script>
 
-    <!-- Google Maps API -->
-    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDNyhyG0ECcjqW2xQHNb2aU36p6kEWWisE&extension=.js'></script> 
+   <!-- Google Maps API -->
+   <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDNyhyG0ECcjqW2xQHNb2aU36p6kEWWisE&extension=.js'></script>
 
 
-    <!-- Custom Theme JavaScript -->
-    <script src="{{ "/js/schoolbag.js" | prepend: site.baseurl }}"></script>
+   <!-- Custom Theme JavaScript -->
+   <script src="{{ "/js/schoolbag.js" | prepend: site.baseurl }}"></script>
+{% endif %}

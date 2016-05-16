@@ -53,10 +53,10 @@
                     </div>
                     <div class="col-md-4 partner">
                         <a href="http://www.guaranteedirish.ie" target="_blank">
-                            <img class="img-responsive" src="img/footer/partner-garanteed.png" alt="" />
+                            <img class="img-responsive" src="{{ "/img/footer/partner-garanteed.png " | prepend: site.baseurl }}" alt="" />
                         </a>
                         <a href="https://aer.microsoft.com" target="_blank">
-                            <img class="img-responsive" src="img/footer/partner-microsoft.png" alt="" />
+                            <img class="img-responsive" src="{{ "/img/footer/partner-microsoft.png" | prepend: site.baseurl }}" alt="" />
                         </a>
                     </div>
                 </div>
@@ -66,7 +66,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5">
-                        <p class="copyright text-left"> <img src="img/footer/The-Examcraft-Group-Symbol-footer.png" alt="" /> Copyright &copy; Learning Data 2016 <br> Part of The Examcraft Group | Registration No: 517572</p>
+                        <p class="copyright text-left">
+                          <img src="{{ "/img/footer/The-Examcraft-Group-Symbol-footer.png" | prepend: site.baseurl }}" alt="" />
+                          Copyright &copy; Learning Data 2016 <br> Part of The Examcraft Group | Registration No: 517572</p>
                     </div>
                     <div class="col-md-3"></div>
                     <div class="col-md-4">

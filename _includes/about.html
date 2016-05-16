@@ -1,19 +1,21 @@
 <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                </div>
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">About</h2>
             </div>
-            <div class="row">
-                <div class="col-md-7 col-sm-8 ">
-                    <p>Learning Data is a subsidiary of <a href="#">The Examcraft Group</a> and has been providing products which support student learning to Irish schools for over 25 years.</p>
-                    <p>Learning Data is a company run by teachers for teachers, in-fact 50% of our workforce are qualified and experienced teachers. So we are first and foremost and education company working to provide solutions which will enhance the learning outcomes of young people and make the life of the teacher easier and more professionally rewarding. Our vision is to develop technology tools which will help students with self-management in a more personalised learning environment.</p>                </div>
-                <div class="col-md-5 text-center">
-                    <img src="img/the-examcraft-group-logo.png" alt="The Examcraft Group">
-                </div>
-            </div>
-            {% include team.html %}
         </div>
-    </section>
+        <div class="row">
+            <div class="col-md-7 col-sm-8 ">
+                <p>Learning Data is a subsidiary of <a href="#">The Examcraft Group</a> and has been providing products which support student learning to Irish schools for over 25 years.</p>
+                <p>Learning Data is a company run by teachers for teachers, in-fact 50% of our workforce are qualified and experienced teachers. So we are first and foremost and education company working to provide solutions which will enhance the learning
+                    outcomes of young people and make the life of the teacher easier and more professionally rewarding. Our vision is to develop technology tools which will help students with self-management in a more personalised learning environment.</p>
+            </div>
+            <div class="col-md-5 text-center">
+                <img src="{{ "/img/the-examcraft-group-logo.png " | prepend: site.baseurl }}" alt="The Examcraft Group">
+            </div>
+        </div>
+        {% include team.html %}
+    </div>
+</section>
