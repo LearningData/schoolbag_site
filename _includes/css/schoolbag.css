@@ -506,6 +506,9 @@ section#banner-mkt {
     color: #fff;
     background-color: #{{ site.color.primary }};
 }
+section#banner-mkt a, section#banner-mkt a:hover {
+    color: #fff;
+}
 section#banner-mkt h3 {
     color: #fff;
 }

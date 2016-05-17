@@ -1,5 +1,5 @@
 url:
-baseurl:
+baseurl: /welcome
 
 # Site settings
 title: Schoolbag
@@ -67,8 +67,8 @@ people:
 
   - name: Sidimar Gobbo
     pic: 4
-    position: UX / UI Designer
-    about: Sidimar is a self-taught UI/UX designer with a passion for design and technology, he provides the design and digital experience for schoolbag product.
+    position: UX/UI Designer
+    about: Sidimar is a self-taught UX/UI Designer with a passion for design and technology, he provides the design and digital experience for Schoolbag.
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
