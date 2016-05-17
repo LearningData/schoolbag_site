@@ -2,7 +2,7 @@
 /* Browser Head */
 .header-browser {
     background-clip: padding-box;
-    background-color: #d1d3d4;
+    background-color: #e4e4e6;
     border-radius: 5px 5px 0 0;
     display: block;
     height: 40px;
@@ -17,7 +17,7 @@
 }
 .header-browser .button-browser span {
     background-clip: padding-box;
-    background-color: #c7c7c7;
+    background-color: #d1d3d4;
     border-radius: 45px;
     display: block;
     height: 10px;
@@ -29,7 +29,7 @@
 }
 .header-browser .button-browser span::after, .header-browser .button-browser span::before {
     background-clip: padding-box;
-    background-color: #c7c7c7;
+    background-color: #d1d3d4;
     border-radius: 45px;
     content: "";
     display: block;
@@ -46,7 +46,7 @@
 }
 .header-browser .bar-browser {
     background-clip: padding-box;
-    background-color: #c7c7c7;
+    background-color: #d1d3d4;
     border-radius: 3px;
     display: block;
     height: 20px;
