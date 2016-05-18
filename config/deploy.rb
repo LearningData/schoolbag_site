@@ -53,17 +53,7 @@ namespace :deploy do
     end
   end
 
+  before "deploy:build_jekyll", "rvm1:hook"
+  after :finishing, "deploy:build_jekyll"
 end
 
-namespace :env do
-
-  task :echo do
-    on roles(:app) do
-      execute :echo, "$PATH"
-    end
-  end
-
-end
-
-before "deploy:build_jekyll", "rvm1:hook"
-after "deploy:symlink:release", "deploy:build_jekyll"
