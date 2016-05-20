@@ -60,17 +60,8 @@ h6 {
 .img-centered {
     margin: 0 auto;
 }
-
-.bg-light-gray {
-    background-color: #f7f7f7;
-}
-
-.bg-darkest-gray {
-    background-color: #222;
-}
-
 .btn-primary {
-    text-transform: uppercase;
+    padding: 10px 20px;
     font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
@@ -119,7 +110,8 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 20px 40px;
+    padding: 10px 20px;
+    margin-bottom: 5px;
     border-color: #{{ site.color.primary }};
     border-radius: 3px;
     font-size: 18px;
@@ -135,6 +127,12 @@ fieldset[disabled] .btn-primary.active {
     border-color: #{{ site.color.primary }};
     color: #fff;
     background-color: #{{ site.color.secondary }};
+}
+@media(min-width:768px) {
+  .btn-xl {
+      padding: 20px 40px;
+      margin-bottom: 0;
+  }
 }
 
 .btn-xl:active,
@@ -243,7 +241,7 @@ fieldset[disabled] .btn-xl.active {
     color: #{{ site.color.secondary }};
     background-color: transparent;
 }
-
+.login-mobile,
 .navbar-default .navbar-nav>.login>a,
 .navbar-default.navbar-shrink .navbar-nav>.login>a {
     border-radius: 3px;
@@ -251,14 +249,30 @@ fieldset[disabled] .btn-xl.active {
     padding-left: 30px;
     padding-right: 30px;
     margin-left: 20px;
+    text-transform: uppercase;
     background-color: #{{ site.color.secondary }};
 }
+.login-mobile:hover,
 .navbar-default .navbar-nav>.login>a:hover,
 .navbar-default.navbar-shrink .navbar-nav>.login>a:hover {
     color: #fff;
+    text-decoration: none;
     background-color: #{{ site.color.secondary }};
 }
-
+.login-mobile {
+    float: right;
+    margin-right: 15px;
+    margin-top: 8px;
+    padding: 7px 30px;
+    font-weight: bold;
+}
+.navbar-default .navbar-brand img.logo-dark {
+    display: none;
+}
+.navbar-default .navbar-brand img {
+    height: 30px;
+    margin-top: -3px;
+}
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
@@ -280,6 +294,7 @@ fieldset[disabled] .btn-xl.active {
     }
     .navbar-default .navbar-brand img {
         width: 100%;
+        height: auto;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -336,16 +351,16 @@ header .intro-text {
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 20px;
     font-weight: 100;
 }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 30px;
 }
 
 @media(min-width:768px) {
@@ -367,26 +382,30 @@ header .intro-text .intro-heading {
         line-height: 60px;
     }
 }
-
 section {
     padding: 70px 0;
 }
-
 section h2.section-heading {
-    margin-top: 50px;
-    margin-bottom: 80px;
-    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
     font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-.howitworks section h2.section-heading {
-    margin-top: 0;
-    margin-bottom: 30px;
-}
-
 @media(min-width:768px) {
     section {
         padding: 90px 0;
     }
+    section h2.section-heading {
+        margin-top: 50px;
+        margin-bottom: 80px;
+        font-size: 40px;
+        font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+}
+
+.howitworks section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 section#howitworks {
     position: relative;
@@ -400,6 +419,7 @@ section#howitworks .btn {
     margin-top: 40px;
 }
 .howitworks-photo  {
+    display: block;
     position: absolute;
     width: 40%;
     top: 300px;
@@ -469,11 +489,22 @@ section#howitworks .btn {
 	color: #fb8306;
 }
 #integrates {
-    padding: 70px 0 90px;
+    padding: 50px 0;
 }
 #integrates h2.section-heading {
     margin-bottom: 40px;
 }
+
+@media(min-width:768px) {
+    #integrates {
+        padding: 70px 0 90px;
+    }
+    #integrates h2.section-heading {
+        margin-bottom: 40px;
+    }
+
+}
+
 
 section#about {
     position: relative;
