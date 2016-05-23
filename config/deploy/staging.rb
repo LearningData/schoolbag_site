@@ -12,5 +12,5 @@ server 'learningdata.net',
        ssh_options: {
          port: 3535,
          user: 'azureuser',
-         forward_agent: false,
+         forward_agent: false
        }
