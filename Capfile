@@ -6,6 +6,9 @@ require 'capistrano/deploy'
 
 # Include tasks from other gems included in your Gemfile
 #
+require "rvm1/capistrano3"
+
+
 # For documentation on these, see for example:
 #
 #   https://github.com/capistrano/rvm

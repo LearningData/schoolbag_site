@@ -10,7 +10,7 @@ set :use_sudo, false
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/home/azureuser/apps/schoolbag_site'
+set :deploy_to, '/home/azureuser/schoolbag_site'
 
 # Default value for :scm is :git
 set :scm, :git
@@ -30,22 +30,41 @@ set :pty, true
 # Default value for linked_dirs is []
 # set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
 
+set :rvm1_ruby_version, "2.3.0"
+
 # Default value for default_env is {}
-set :default_env, { path: "/usr/local/rvm/gems/ruby-2.3.0/bin:$PATH" }
+set :default_env, {
+      path: "/usr/local/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/default/bin:$PATH",
+      gem_home: "/usr/local/rvm/gems/ruby-2.3.0",
+      gem_path: "/usr/local/rvm/gems/ruby-2.3.0"
+    }
+#set :default_env, -> {{ path: [fetch(:gem_path), "/usr/local/rvm/gems/ruby-2.3.0@global/bin", "/usr/local/rvm/rubies/ruby-2.3.0/bin", "/usr/local/rvm/bin", "#{release_path}/bin", "$PATH"].join(":") }}
 
 # Default value for keep_releases is 5
 set :keep_releases, 3
 
 namespace :deploy do
 
+  desc "Quick test of the enviroment path"
+  task :test_env do
+    on roles(:app) do
+      execute "echo $PATH"
+    end
+  end
+
+  desc "Run Jekyll to build the static site"
   task :build_jekyll do
     on roles(:app) do
       within "#{deploy_to}/current" do
-        execute "jekyll build"
+        execute :jekyll, "build"
       end
     end
   end
 
+  if fetch(:stage) != :production
+    before "deploy:build_jekyll", "rvm1:hook"
+    after :finishing, "deploy:build_jekyll"
+  end
+  
 end
 
-after "deploy:symlink:release", "deploy:build_jekyll"
