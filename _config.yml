@@ -4,7 +4,7 @@ baseurl: /welcome
 # Site settings
 title: Schoolbag
 email: info@schoolbag.ie
-description: "Learning Data is a subsidiary of The Examcraft Group and has been providing products which support student learning to Irish schools for over 25 years."
+description: "Learning Data is a subsidiary of The Examcraft Group which has been providing products which support student learning to Irish schools for over 25 years."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -58,7 +58,7 @@ people:
   - name: Stuart Johnson
     pic: 2
     position: Technical Director
-    about: Stuart Johnson holds a PhD in Physics from the University of Edinburgh. After gaining his PGCE teaching qualification from the University of York, he taught for 4 years, first in the UK state system and then in an international school in Spain.
+    about: Stuart holds a PhD in Physics from the University of Edinburgh. After gaining his PGCE teaching qualification, he taught first in the UK state system and then in a British school in Spain. He has over 10 years experience building software which helps schools.
 
   - name: Amanda Ferris
     pic: 3

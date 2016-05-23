@@ -10,7 +10,7 @@ set :use_sudo, false
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/home/azureuser/apps/schoolbag_site'
+set :deploy_to, '/home/azureuser/schoolbag_site'
 
 # Default value for :scm is :git
 set :scm, :git
@@ -45,6 +45,14 @@ set :keep_releases, 3
 
 namespace :deploy do
 
+  desc "Quick test of the enviroment path"
+  task :test_env do
+    on roles(:app) do
+      execute "echo $PATH"
+    end
+  end
+
+  desc "Run Jekyll to build the static site"
   task :build_jekyll do
     on roles(:app) do
       within "#{deploy_to}/current" do
@@ -53,7 +61,10 @@ namespace :deploy do
     end
   end
 
-  before "deploy:build_jekyll", "rvm1:hook"
-  after :finishing, "deploy:build_jekyll"
+  if fetch(:stage) != :production
+    before "deploy:build_jekyll", "rvm1:hook"
+    after :finishing, "deploy:build_jekyll"
+  end
+  
 end
 
