@@ -1,5 +1,5 @@
 url:
-baseurl: /welcome
+baseurl:
 
 # Site settings
 title: Schoolbag
@@ -12,43 +12,7 @@ color:
   secondary: f47920
   secondary-dark: 333
 
-# What our schools have to say
-quotes:
-  - text: It helps me be organised for my homework and keeps me on track. I use it every night to know what I have for homework
-    author: Student
-
-  - text: Schoolbag really helped to keep me organised… it makes homework and assignments much easier to keep track of.
-    author: Student
-
-  - text: Schoolbag allows me to receive my homework if I don’t get it in school
-    author: Student
-
-  - text: Schoolbag gives me the ability to include resources and to be very specific with the homework I require… Students like the diary type layout of Schoolbag.
-    author: Teacher, Elphin Community College
-
-  - text: I find Schoolbag an invaluable tool. It enables me to share homework and revision resources with my students and exam class now have access to extra questions that they can practice in their own time.
-    author: Teacher, Coláiste Mhuire, Mullingar
-
-  - text: Schoolbag really helped to keep me organised… it makes homework and assignments much easier to keep track of.
-    author: Student
-
-  - text: Many students have commented that this has helped to focus their revision and they like having the material available online instead of sheets of paper which they frequently misplace.
-    author: Teacher, Coláiste Mhuire, Mullingar
-
-  - text: It’s very useful, I can put resources that students can access at home and I put on the homework too.
-    author: Teacher, St Mary’s Macroom
-
-  - text: Parents know homework students get. Students know homework given if they are out sick or on extracurricular activities
-    author: Teacher, Coláiste Phádraig CBS Lucan
-
-  - text: Enhances the way homework is distributed to students and builds a picture of how homework is being given and received
-    author: Teacher, Elphin Community College
-
-  - text: Parents have direct access to their child’s homework. This gives parents a real idea of how well their child is participating in the homework process.
-    author: Deputy Principal, Corran College
-
-
-# Team names, titles and social links
+# Staff names, titles and social links
 people:
   - name: Philip O'Callaghan
     pic: 1
