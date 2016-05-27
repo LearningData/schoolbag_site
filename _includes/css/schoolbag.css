@@ -384,16 +384,12 @@ section h2.section-heading {
     }
 }
 
-section#calendar {
-    position: relative;
-    overflow: hidden;
-}
-section#calendar p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-section#calendar .btn {
-    margin-top: 40px;
+.calender {
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    width: 100%;
+    height: 100%;
 }
 @media(min-width:768px) {
     section#principles img {
@@ -413,16 +409,25 @@ section#calendar .btn {
     #resources {
         padding: 70px 0 90px;
     }
-    #resources h2.section-heading {
-        margin-bottom: 40px;
-    }
-
 }
-
 
 section#about {
     position: relative;
     overflow: hidden;
+}
+.about-photo  {
+    display: block;
+    position: absolute;
+    width: 20%;
+    top: 260px;
+    right:-15%;
+    height: 250px;
+    height: 300px;
+}
+@media(min-width:768px) {
+    .about-photo  {
+        width: 50%;
+    }
 }
 section#staff {
     padding-bottom: 0;

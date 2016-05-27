@@ -12,28 +12,6 @@ color:
   secondary: f47920
   secondary-dark: 333
 
-# Staff names, titles and social links
-people:
-  - name: Philip O'Callaghan
-    pic: 1
-    position: Managing Director
-    about: Philip taught for 10 years in Naas CBS and St. David’s CBS, Artane. Since leaving the classroom he has been the managing director of Examcraft, the parent company of Schoolbag.
-
-  - name: Stuart Johnson
-    pic: 2
-    position: Technical Director
-    about: Stuart holds a PhD in Physics from the University of Edinburgh. After gaining his PGCE teaching qualification, he taught first in the UK state system and then in a British school in Spain. He has over 10 years experience building software which helps schools.
-
-  - name: Amanda Ferris
-    pic: 3
-    position: Digital Education Product Specialist
-    about: Amanda is a trained primary and secondary school teacher with a passion for educational technology, she provides support and training to our schools and teachers, and is in charge of product testing.
-
-  - name: Sidimar Gobbo
-    pic: 4
-    position: UX/UI Designer
-    about: Sidimar is a self-taught UX/UI Designer with a passion for design and technology, he provides the design and digital experience for Schoolbag.
-
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
