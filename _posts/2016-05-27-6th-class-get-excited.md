@@ -4,4 +4,6 @@ title: "6th Class get Excited!"
 description: ""
 tags: []
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis lacinia nisi in consectetur. Nulla vitae porttitor elit, et volutpat neque. Vestibulum sollicitudin accumsan mattis. Nullam fermentum purus risus, in ultricies leo semper a. Etiam hendrerit lorem vitae urna luctus vulputate. Pellentesque nisi nibh, pharetra ac dictum eu, gravida eu velit. Cras dolor quam, vulputate ac sem sed, pulvinar vestibulum leo. Vivamus mollis erat mauris, vel volutpat lorem tristique nec. Pellentesque lobortis egestas ante a pretium. Nullam elit nunc, imperdiet id faucibus tristique, ornare quis lorem. Mauris nec risus lorem. Maecenas malesuada quam id augue tempor, in iaculis ipsum rutrum. Quisque viverra turpis ante, sit amet mattis ligula tincidunt vel.
+Excited is the digital learning festival in Dublin and four of our students from 6th class got to go this year. THe invitation came about as a result of their blogging project. They had the opportunity to show visitors to Excited their blog and answer questions about the skills they had learned in doing the project.
+
+Link: <a href="http://excited.ie/">http://excited.ie</a>
