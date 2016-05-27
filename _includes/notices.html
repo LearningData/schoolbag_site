@@ -1,17 +1,24 @@
 <div class="row">
     <div class="container">
       {% for post in site.posts %}
-        <div class="box">
-          <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
-          <p>{{ post.description }}</p>
-          <article>
-            {{ post.content }}
-          </article>
-          <footer>
-            <p>{{ post.date | date_to_string }}</p>
-          </footer>
+
+      <div class="media">
+        <div class="media-left">
+            {{ post.date | date: "%-d" }}
+            {% assign m = post.date | date: "%B" %}
+            {% case m %}
+                {% else %}{{ post.date | date: "%b" }}
+            {% endcase %}
+            {{ post.date | date: "%-Y" }}
         </div>
-        <br>
+        <div class="media-body">
+            <h2>{{ post.title }}</h2>
+            <p><small>{{ post.description }}</small></p>
+            <article>
+              {{ post.content }}
+            </article>
+        </div>
+      </div>
       {% endfor %}
     </div>
 </div>
