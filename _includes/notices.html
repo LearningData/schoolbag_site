@@ -1,24 +1,29 @@
 <div class="row">
     <div class="container">
-      {% for post in site.posts %}
-
-      <div class="media">
-        <div class="media-left">
-            {{ post.date | date: "%-d" }}
-            {% assign m = post.date | date: "%B" %}
-            {% case m %}
-                {% else %}{{ post.date | date: "%b" }}
-            {% endcase %}
-            {{ post.date | date: "%-Y" }}
+      <div class="col-xs-12 col-sm-9">
+          {% for post in site.posts %}
+          <div class="media">
+            <div class="media-left">
+                <div class="notices-month">
+                    {% assign m = post.date | date: "%B" %}
+                    {% case m %}
+                        {% else %}{{ post.date | date: "%b" }}
+                    {% endcase %}
+                </div>
+                <div class="notices-day">
+                    {{ post.date | date: "%-d" }}
+                </div>
+            </div>
+            <div class="media-body">
+                <h2>{{ post.title }}</h2>
+                <p><small>{{ post.description }}</small></p>
+                <article>
+                  {{ post.content }}
+                </article>
+            </div>
+          </div>
+          <hr>
+          {% endfor %}
         </div>
-        <div class="media-body">
-            <h2>{{ post.title }}</h2>
-            <p><small>{{ post.description }}</small></p>
-            <article>
-              {{ post.content }}
-            </article>
-        </div>
-      </div>
-      {% endfor %}
     </div>
 </div>

@@ -1,0 +1,33 @@
+.notices h2 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.notices hr {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+.notices .media-left {
+  padding-right: 30px;
+  border-right: 1px solid #eee;
+}
+.notices .media-body {
+
+  padding-left: 30px;
+}
+.notices-month {
+  font-weight: 600;
+  color: #e2e4e6;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.notices-day {
+  font-weight: 600;
+  color: #b9bec3;
+  text-align: center;
+  font-size: 36px;
+  line-height: 20px;
+}
