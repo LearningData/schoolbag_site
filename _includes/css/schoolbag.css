@@ -247,31 +247,6 @@ fieldset[disabled] .btn-xl.active {
     color: #{{ site.color.secondary }};
     background-color: transparent;
 }
-.login-mobile,
-.navbar-default .navbar-nav>.login>a,
-.navbar-default.navbar-shrink .navbar-nav>.login>a {
-    border-radius: 3px;
-    color: #fff;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: 20px;
-    text-transform: uppercase;
-    background-color: #{{ site.color.secondary }};
-}
-.login-mobile:hover,
-.navbar-default .navbar-nav>.login>a:hover,
-.navbar-default.navbar-shrink .navbar-nav>.login>a:hover {
-    color: #fff;
-    text-decoration: none;
-    background-color: #{{ site.color.secondary }};
-}
-.login-mobile {
-    float: right;
-    margin-right: 15px;
-    margin-top: 8px;
-    padding: 7px 30px;
-    font-weight: bold;
-}
 .navbar-default .navbar-brand img.logo-dark {
     display: none;
 }
@@ -336,11 +311,11 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
-
 header {
     width: 100%;
     text-align: center;
     color: #fff;
+    background-image: url('img/bg-header.jpg');
     background-attachment: scroll;
     background-position: center center;
     background-repeat: none;
@@ -409,99 +384,36 @@ section h2.section-heading {
     }
 }
 
-section#howitworks {
+section#calendar {
     position: relative;
     overflow: hidden;
 }
-section#howitworks p {
+section#calendar p {
     font-size: 16px;
     margin-bottom: 20px;
 }
-section#howitworks .btn {
+section#calendar .btn {
     margin-top: 40px;
 }
-.howitworks-photo  {
-    display: block;
-    position: absolute;
-    width: 40%;
-    top: 300px;
-    right:0;
-    min-height: 300px;
-    height: 100%;
-}
-@media(min-width:991px) {
-    .howitworks-photo  {
-        width: 50%;
-    }
-
-}
 @media(min-width:768px) {
-    section#benefits img {
+    section#principles img {
         width: 100px;
         height: auto;
     }
 }
 
-/* block quotes*/
-.div-quote  {
-  display: none;
-}
-.quotes {
-  margin-top: 50px;
-  min-height: 100px;
-}
-.quotes blockquote{
-	background: #fff;
-	padding: 30px;
-  min-height: 150px;
-	border-radius: 5px;
-	box-shadow:
-		inset 0 2px 0 rgba(251, 131, 0, 0.7),
-		0 0 21px rgba(0, 0, 0, 0.3);
-  border-left: none;
-}
-.quotes blockquote p {
-	font-size: 16px;
-	line-height: 24px;
-	text-indent: 90px;
-	position: relative;
-}
-.quotes blockquote p:before{
-	content: '\201C';
-	font-family: serif;
-	font-style: normal;
-	font-weight: 700;
-	position: absolute;
-	font-size: 150px;
-	top: 0px;
-	left: -95px;
-	color: #fb8306;
-	text-shadow: 4px 7px 10px rgba(0, 0, 0, 0.1);
-}
-
-.quotes .mb-attribution {
-	text-align: right;
-	padding: 0 30px 20px 20px;
-	position: relative;
-}
-
-.quotes .mb-author{
-	font-weight: 700;
-	font-size: 18px;
-	color: #fb8306;
-}
-#integrates {
+#resources {
     padding: 50px 0;
 }
-#integrates h2.section-heading {
+#resources h2.section-heading {
     margin-bottom: 40px;
 }
 
 @media(min-width:768px) {
-    #integrates {
+    #resources {
         padding: 70px 0 90px;
     }
-    #integrates h2.section-heading {
+    #resources h2.section-heading {
         margin-bottom: 40px;
     }
 
@@ -512,7 +424,7 @@ section#about {
     position: relative;
     overflow: hidden;
 }
-section#team {
+section#staff {
     padding-bottom: 0;
 }
 .team-member {
@@ -534,22 +446,6 @@ section#team {
 .team-member p {
     margin-top: 0;
 }
-
-section#banner-mkt {
-    color: #fff;
-    background-color: #{{ site.color.primary }};
-}
-section#banner-mkt a, section#banner-mkt a:hover {
-    color: #fff;
-}
-section#banner-mkt h3 {
-    color: #fff;
-}
-
-aside.clients img {
-    margin: 50px auto -20px;
-}
-
 section#contact {
     padding-top: 0;
     margin-top: 0;

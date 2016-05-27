@@ -36,10 +36,10 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 // Loading image for header section randomly
-var images = ['01.jpg', '02.jpg', '03.jpg', '04.jpg', '05.jpg', '06.jpg'];
-$('header').css({
-    'background-image': 'url(img/header/' + images[Math.floor(Math.random() * images.length)] + ')'
-});
+// var images = ['01.jpg', '02.jpg', '03.jpg', '04.jpg', '05.jpg', '06.jpg'];
+// $('header').css({
+//     'background-image': 'url(img/header/' + images[Math.floor(Math.random() * images.length)] + ')'
+// });
 
 
 // Loading quotes divs randomly
