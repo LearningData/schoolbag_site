@@ -10,7 +10,7 @@ To see it working on local type in the browser: http://localhost:4000/
 Images are in '/img'header
 
 ###How it works
-mages are in '/img'
+Images are in '/img'
 Pages related are in /howitworks
 
 ###Benefits
@@ -20,7 +20,7 @@ Images are in '/img/benefits'
 Images are in '/img/integrate'
 
 ###About
-mages are in '/img'
+Images are in '/img'
 
 ###Our people
 Images are in '/img/team/'
@@ -30,6 +30,7 @@ Team members and info are in '_config.yml'
 Using [Google maps API] https://developers.google.com/maps/
 key = AIzaSyDNyhyG0ECcjqW2xQHNb2aU36p6kEWWisE
 Address info is in '_config.yml'
+Configure settings for mail in /mail/contact_me.php
 
 ###Footer
 Images are in '/img/footer'
