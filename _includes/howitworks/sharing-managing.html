@@ -2,24 +2,84 @@
 <section id="managing-homework" class="bg-light-gray">
     <div class="container">
         <div class="row">
-            <div class="col-md-7 col-md-push-5">
-              <div class="header-browser">
-                  <div class="button-browser">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                  </div>
-                  <div class="bar-browser"></div>
-              </div>
+            <div class="col-sm-7 col-md-push-5">
+                <div class="header-browser">
+                    <div class="button-browser">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="bar-browser"></div>
+                </div>
                 <img class="img-responsive" src="{{ "/img/howitworks/sharing-managing.jpg" | prepend: site.baseurl }}" alt="" />
             </div>
             <div class="col-md-5 col-md-pull-7">
-                <h2 class="section-heading">Sharing and managing homework</h3>
+                <h2 class="section-heading">Sharing and managing homework</h2>
                 <p>
-                  Teachers, students and parents can all see the homework that is relevant to them through Schoolbag. When a teacher creates a homework assignment for their class, or a small group in their class the homework is automatically sent to the students’ accounts and the accounts of their parents’. Teachers can mark homework in Schoolbag and provide feedback and comments for the student.
+                    Teachers, students and parents can all see the homework that is relevant to them through Schoolbag. When a teacher creates a homework assignment for their class, or a small group in their class the homework is automatically sent to the students’ accounts
+                    and the accounts of their parents’. Teachers can mark homework in Schoolbag and provide feedback and comments for the student.
                 </p>
             </div>
-
+            <div class="clearfix"></div>
+            <div class="book-target"></div>
+            <div class="col-md-10 section-book">
+                <h2 class="section-heading book-link" id="what-every-teacher">
+                    <a href="#what-every-teacher">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                        The importance of homework…
+                    </a>
+                </h2>
+                <p>
+                    There is piles of research out there about homework and how effective homework is in relation to student achievement. Here are six key takeaways from the research out there that all head teachers should know about homework and it’s effectiveness in a Secondary School setting and how homework helps raise students’ attainment.
+                </p>
+                <a class="btn btn-primary page-scroll" role="button" data-class=".book-target" data-toggle="collapse" href="#collapseBookForm" aria-expanded="false" aria-controls="collapseBookForm">
+                  Get your copy
+                </a>
+            </div>
+            <div class="clearfix"></div>
+            <div class="collapse" id="collapseBookForm">
+                <div id="formBook">
+                    <div class="col-md-12">
+                        <a href="#collapseBookForm" class="pull-right" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseBookForm">
+                            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <h3 class="section-heading">What every teacher should know about homework</h3>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                        <img class="img-responsive" src="{{ "/img/howitworks/book-what-evey.png" | prepend: site.baseurl }}" alt="" />
+                    </div>
+                    <div class="col-md-offset-1 col-sm-8 col-md-6">
+                        <form class="bookDownload" name="bookDownload" id="bookDownload" novalidate>
+                            <div class="control-group form-group">
+                                <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group form-group">
+                                <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group form-group">
+                                <input type="text" class="form-control" placeholder="School Name *" id="school" required data-validation-required-message="Please enter your school name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group form-group">
+                                <input type="text" class="form-control" placeholder="Role *" id="role" required data-validation-required-message="Please enter your role.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div id="success"></div>
+                            <button type="submit" class="btn btn-primary">Get your copy now</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="formThanks" class="col-sm-8" style="display: none;">
+                    <p>
+                        Thanks for signing up to receive a free copy of <strong><em>What Every Head Teacher Should Know About Homework</em></strong>, your copy can be downloaded using the personalised link below.
+                    </p>
+                    <a class="btn btn-primary" role="button" href="{{ "/books/What_Every_Head_Teacher_Should_Know_About_Homework.pdf" | prepend: site.baseurl }} ">
+                      Download Report
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </section>

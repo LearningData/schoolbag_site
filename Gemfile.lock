@@ -1,5 +1,14 @@
 GEM
   specs:
+    airbrussh (1.0.2)
+      sshkit (>= 1.6.1, != 1.7.0)
+    capistrano (3.5.0)
+      airbrussh (>= 1.0.0)
+      capistrano-harrow
+      i18n
+      rake (>= 10.0.0)
+      sshkit (>= 1.9.0)
+    capistrano-harrow (0.5.1)
     colorator (0.1)
     css_press (0.3.2)
       csspool-st (= 3.1.2)
@@ -12,6 +21,7 @@ GEM
       multi_css (>= 0.1.0)
       multi_js (>= 0.1.0)
     htmlentities (4.3.4)
+    i18n (0.7.0)
     jekyll (3.1.2)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
@@ -41,12 +51,22 @@ GEM
       css_press
     multi_js (0.1.0)
       uglifier (~> 2)
+    net-scp (1.2.1)
+      net-ssh (>= 2.6.5)
+    net-ssh (3.1.1)
+    rake (11.1.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     rouge (1.10.1)
+    rvm1-capistrano3 (1.4.0)
+      capistrano (~> 3.0)
+      sshkit (>= 1.2)
     safe_yaml (1.0.4)
     sass (3.4.22)
+    sshkit (1.10.0)
+      net-scp (>= 1.1.2)
+      net-ssh (>= 2.8.0)
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
@@ -56,6 +76,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll-press
+  rvm1-capistrano3
 
 BUNDLED WITH
    1.12.3

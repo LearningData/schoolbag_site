@@ -82,13 +82,43 @@
 .howitworks section {
   padding: 30px 0;
 }
+
 .howitworks section h2.section-heading {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
     line-height: 28px;
 }
-@media(min-width:768px) {
+.howitworks section h2.book-link a {
+    color: #6d6e71;
+}
+.howitworks h2.book-link a:hover,
+.howitworks h2.book-link a:focus {
+    text-decoration: none;
+}
+.howitworks section h2.book-link a .fa.fa-link {
+    display: none;
+    float: left;
+    margin-left: -30px;
+    font-size: 26px;
+}
+.howitworks section h2.book-link a:hover .fa {
+    display: block;
+}
+
+
+.howitworks section h3.section-heading {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 28px;
+}
+@media(min-width:991px) {
+    .howitworks section h2.section-heading {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 28px;
+    }
   .howitworks section {
     padding: 70px 0;
   }
@@ -96,4 +126,77 @@
       margin-top: 0;
       margin-bottom: 30px;
   }
+}
+
+
+.section-book {
+    margin-top: 50px;
+}
+
+#collapseBookForm  {
+    margin: 40px 0 0;
+}
+.bookDownload .form-group {
+    margin-bottom: 25px;
+}
+.bookDownload .form-group input {
+    padding: 10px;
+}
+@media(min-width:991px) {
+    .bookDownload .form-group input {
+        padding: 20px;
+    }
+}
+.bookDownload .form-group input.form-control {
+    height: auto;
+}
+.bookDownload .form-control {
+    border-color: #cccccc;
+    box-shadow: none;
+    border-width: 1px;
+}
+.bookDownload .form-control:focus {
+    border-color: #{{ site.color.primary }};
+    box-shadow: none;
+}
+.bookDownload::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+.bookDownload:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+.bookDownload::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+.bookDownload:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+.bookDownload .text-danger {
+    color: #e74c3c;
+}
+.bookDownload .contact-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 15px;
+    background-color: #{{ site.color.primary }};
+}
+.bookDownload .contact-icon .fa {
+    font-size: 24px;
+    color: #fff;
+}
+.bookDownload .contact-icon .fa.fa-envelope {
+    font-size: 20px;
 }
