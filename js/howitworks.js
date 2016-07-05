@@ -8,3 +8,9 @@ $(function() {
         event.preventDefault();
     });
 });
+$('.btn-get-book').click(function() {
+  $(this).hide();
+});
+$('.btn-close').click(function() {
+  $('.btn-get-book').slideDown(100);
+});

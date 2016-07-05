@@ -79,6 +79,8 @@ h6 {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
 .open .dropdown-toggle.btn-primary {
     border-color: #{{ site.color.primary }};
     color: #fff;

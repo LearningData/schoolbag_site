@@ -36,6 +36,7 @@ $(function() {
                     });
                     var name = $("input#name").val();
                     $("#formThanks").prepend('<h3>Hi ' + name + ',</h3>');
+
                     //clear all fields
                     $('#bookDownload').trigger("reset");
                 },
