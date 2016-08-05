@@ -60,10 +60,10 @@ people:
     position: Technical Director
     about: Stuart holds a PhD in Physics from the University of Edinburgh. After gaining his PGCE teaching qualification, he taught first in the UK state system and then in a British school in Spain. He has over 10 years experience building software which helps schools.
 
-  - name: Amanda Ferris
-    pic: 3
-    position: Digital Education Product Specialist
-    about: Amanda is a trained primary and secondary school teacher with a passion for educational technology, she provides support and training to our schools and teachers, and is in charge of product testing.
+  # - name: Amanda Ferris
+  #   pic: 3
+  #   position: Digital Education Product Specialist
+  #   about: Amanda is a trained primary and secondary school teacher with a passion for educational technology, she provides support and training to our schools and teachers, and is in charge of product testing.
 
   - name: Sidimar Gobbo
     pic: 4
@@ -89,3 +89,9 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# jekyll-press:
+#   exclude: 'atom.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
+#   js_options: {}      # js minifier options
+#   css_options: {}     # css minifier options
+#   html_options: {}    # html minifier options

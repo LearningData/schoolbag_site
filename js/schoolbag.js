@@ -8,7 +8,7 @@
 function pageHeight() {
     var wHeight = $(window).height();
     console.log(wHeight);
-    $('header, #howitworks, #benefits, #about, #contatct').css('min-height', wHeight);
+    $('header, #howitworks, #about, #contatct').css('min-height', wHeight);
 }
 pageHeight()
 $(window).resize(function() {

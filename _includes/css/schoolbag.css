@@ -79,8 +79,6 @@ h6 {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
-.btn-primary:active:focus,
-.btn-primary:active:hover,
 .open .dropdown-toggle.btn-primary {
     border-color: #{{ site.color.primary }};
     color: #fff;
@@ -385,9 +383,9 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-heading {
         margin-bottom: 50px;
-        font-size: 52px;
+        font-size: 60px;
         font-weight: 700;
-        line-height: 52px;
+        line-height: 60px;
     }
 }
 section {
@@ -438,6 +436,9 @@ section#howitworks .btn {
 
 }
 @media(min-width:768px) {
+    section#benefits {
+      padding-bottom: 70px;
+    }
     section#benefits img {
         width: 100px;
         height: auto;
@@ -492,8 +493,14 @@ section#howitworks .btn {
 	font-size: 18px;
 	color: #fb8306;
 }
-#integrates {
-    padding: 50px 0;
+@media(min-width:768px) {
+    section#quotes {
+      padding-top: 30px;
+    }
+}
+
+section#integrates {
+    padding: 30px 0;
 }
 #integrates h2.section-heading {
     margin-bottom: 40px;
@@ -501,10 +508,13 @@ section#howitworks .btn {
 
 @media(min-width:768px) {
     #integrates {
-        padding: 70px 0 90px;
+        padding: 30px 0 30px;
     }
     #integrates h2.section-heading {
         margin-bottom: 40px;
+    }
+    #integrates h3.section-heading {
+        margin-bottom: 50px;
     }
 
 }
@@ -537,14 +547,15 @@ section#team {
     margin-top: 0;
 }
 
-section#banner-mkt {
+
+.special-banner {
     color: #fff;
     background-color: #{{ site.color.primary }};
 }
-section#banner-mkt a, section#banner-mkt a:hover {
+.special-banner a, .special-banner a:hover {
     color: #fff;
 }
-section#banner-mkt h3 {
+.special-banner h3 {
     color: #fff;
 }
 
