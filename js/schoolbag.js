@@ -54,7 +54,7 @@ google.maps.event.addDomListener(window, 'load', init);
 
 function init() {
     var mapOptions = {
-        center: new google.maps.LatLng(53.341171, -6.284175),
+        center: new google.maps.LatLng(53.3791097,-6.291919),
         zoom: 18,
         zoomControl: true,
         zoomControlOptions: {
@@ -76,7 +76,7 @@ function init() {
     var mapElement = document.getElementById('map');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-        ['Learning Data', 'undefined', '(+353) (0)1 410 0604', 'info@learningdata.ie', 'http://learningdata.ie', 53.341171, -6.284175, 'img/solid-pin-orange.png']
+        ['Learning Data', 'undefined', '(+353) (0) 1 8140710', 'info@learningdata.ie', 'http://learningdata.ie', 53.3791097,-6.291919, 'img/solid-pin-orange.png']
     ];
     for (i = 0; i < locations.length; i++) {
         if (locations[i][1] == 'undefined') {

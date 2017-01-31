@@ -83,8 +83,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: The Guinness Enterprise Centre,
-  - line:  Taylor’s Lane - Dublin 8, Ireland
+  - line: 35 Finglas Business Park, Tolka Valley Road,
+  - line: Finglas, Dublin 11, Ireland
 
 # Build settings
 markdown: kramdown
