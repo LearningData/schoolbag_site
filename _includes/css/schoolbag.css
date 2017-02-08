@@ -278,6 +278,17 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand img {
     height: 30px;
     margin-top: -3px;
+    display: block;
+    float: left;
+}
+.navbar-default .navbar-brand .ty-portfolio {
+  float: left;
+  font-size: 18px;
+  color: #fff;
+  border-left: solid 1px #fff;
+  margin-left: 15px;
+  padding: 10px;
+  line-height: 18px;
 }
 @media(min-width:768px) {
     .navbar-default {
@@ -299,7 +310,7 @@ fieldset[disabled] .btn-xl.active {
         height: auto;
     }
     .navbar-default .navbar-brand img {
-        width: 100%;
+        /*width: 100%;*/
         height: auto;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
@@ -322,10 +333,11 @@ fieldset[disabled] .btn-xl.active {
         display: none;
     }
     .navbar-default.navbar-shrink .navbar-brand img.logo-dark {
-        display: block;;
+        display: block;
     }
-    .navbar-default.navbar-shrink .navbar-brand img {
-        width: 80%;
+    .navbar-default.navbar-shrink .navbar-brand .ty-portfolio {
+      color: #6b6c70;
+      border-color: #6b6c70;
     }
 }
 @media(min-width:991px) {
@@ -335,7 +347,6 @@ fieldset[disabled] .btn-xl.active {
         padding-right: 15px;
     }
 }
-
 
 header {
     width: 100%;

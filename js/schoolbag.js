@@ -7,7 +7,6 @@
 //Set height for each section
 function pageHeight() {
     var wHeight = $(window).height();
-    console.log(wHeight);
     $('header, #howitworks, #about, #contatct').css('min-height', wHeight);
 }
 pageHeight()
