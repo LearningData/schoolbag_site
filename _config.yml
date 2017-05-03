@@ -1,8 +1,8 @@
 url:
-baseurl:
+baseurl: /welcome
 
 # Site settings
-title: Schoolbag
+title: TY Portfolio
 email: info@schoolbag.ie
 description: "Learning Data is a subsidiary of The Examcraft Group which has been providing products which support student learning to Irish schools for over 25 years."
 
