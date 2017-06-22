@@ -359,6 +359,7 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background-image: url('img/header/header.jpg');
 }
 
 header .intro-text {
