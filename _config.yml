@@ -8,9 +8,9 @@ description: "Learning Data is a subsidiary of The Examcraft Group which has bee
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 2e8e8a
-  secondary: 2e8e8a
-  secondary-dark: 2e8e8a
+  primary: F36F31
+  secondary: F36F31
+  secondary-dark: F36F31
 
 # What our schools have to say
 # quotes:
