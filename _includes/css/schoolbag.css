@@ -134,6 +134,19 @@ fieldset[disabled] .btn-primary.active {
     color: #fff;
     background-color: #{{ site.color.secondary }};
 }
+
+
+.btn-xl.white {
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    border-color: #{{ site.color.primary }};
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #{{ site.color.primary }};
+    background-color: #fff;
+}
+
 @media(min-width:768px) {
   .btn-xl {
       padding: 20px 40px;
@@ -227,42 +240,45 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
+.navbar-default .nav li a:focus,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
     outline: 0;
-    color: #{{ site.color.primary }};
+    color: #fff;
+    font-weight: bold;
     background-color: transparent;
 }
-
-.navbar-default .navbar-nav>.active>a,
-.navbar-default.navbar-shrink .navbar-nav>.active>a {
+.navbar-default.navbar-shrink .nav li a:hover,
+.navbar-default.navbar-shrink .nav li a:focus,
+.navbar-default.navbar-shrink .navbar-nav>.active>a,
+.navbar-default.navbar-shrink .navbar-nav>.active>a:hover,
+.navbar-default.navbar-shrink .navbar-nav>.active>a:focus {
     border-radius: 0;
     font-weight: 600;
     background-color: transparent;
     color: #{{ site.color.primary }};
 }
-
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
-    font-weight: 600;
-    color: #{{ site.color.secondary }};
-    background-color: transparent;
-}
 .login-mobile,
 .navbar-default .navbar-nav>.login>a,
-.navbar-default.navbar-shrink .navbar-nav>.login>a {
+.login-mobile:hover,
+.navbar-default .navbar-nav>.login>a:hover  {
+  border-radius: 3px;
+  color: #{{ site.color.secondary }};
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+.navbar-default.navbar-shrink .navbar-nav>.login>a,
+.navbar-default.navbar-shrink .navbar-nav>.login>a:hover {
     border-radius: 3px;
     color: #fff;
     padding-left: 30px;
     padding-right: 30px;
     margin-left: 20px;
     text-transform: uppercase;
-    background-color: #{{ site.color.secondary }};
-}
-.login-mobile:hover,
-.navbar-default .navbar-nav>.login>a:hover,
-.navbar-default.navbar-shrink .navbar-nav>.login>a:hover {
-    color: #fff;
-    text-decoration: none;
     background-color: #{{ site.color.secondary }};
 }
 .login-mobile {
@@ -352,14 +368,8 @@ header {
     width: 100%;
     text-align: center;
     color: #fff;
-    background-attachment: scroll;
-    background-position: top center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    background-image: url('img/header/header.jpg');
+    overflow: hidden;
+    background-color: #{{ site.color.secondary }};
 }
 
 header .intro-text {
@@ -379,6 +389,11 @@ header .intro-text .intro-heading {
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
+}
+header .header-image {
+  position: absolute;
+  right: 0;
+  top: 160px;
 }
 
 @media(min-width:768px) {
@@ -408,6 +423,10 @@ section h2.section-heading {
     margin-bottom: 50px;
     font-size: 36px;
     font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h2.white {
+  color: #fff;
+  margin-bottom: 40px;
 }
 @media(min-width:768px) {
     section {
@@ -573,11 +592,6 @@ section#team {
 
 aside.clients img {
     margin: 50px auto -20px;
-}
-
-section#contact {
-    padding-top: 0;
-    margin-top: 0;
 }
 section#contact .form-group {
     margin-bottom: 25px;

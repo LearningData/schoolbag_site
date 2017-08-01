@@ -2,55 +2,24 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-                        <h4>Get in Touch</h4>
-                        <div class="media">
-                            <div class="media-left">
-                                <div class="contact-icon text-center">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                          <div class="media-body">
-                              <h5 class="media-heading">Location:</h5>
-                              {% for address in site.address %}
-                                {{ address.line }}<br>
-                              {% endfor %}
-                            </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-left">
-                                <div class="contact-icon text-center">
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                          <div class="media-body">
-                              <h5 class="media-heading">Phone:</h5 >
-                              IE: (+353) (0) 1 410 0604
-                          </div>
-                        </div>
-                        <div class="media">
-                            <div class="media-left">
-                                <div class="contact-icon text-center">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                          <div class="media-body">
-                              <h5 class="media-heading">Email:</h5>
-                              info@learningdata.ie
-                            </div>
-                        </div>
+                  <div class="col-sm-12 text-center">
+                      <h2 class="section-heading white">Get in Touch</h2>
+                  </div>
+                    <div class="col-md-4 text-center">
+                        <h5 class="media-heading"><i class="fa fa-map-marker" aria-hidden="true"></i> Location:</h5>
+                        {% for address in site.address %}
+                          {{ address.line }}<br>
+                        {% endfor %}
                     </div>
-                    <div class="col-md-4">
-                        <a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/ExamcraftGroup">Tweets by ExamcraftGroup</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    <div class="col-md-4 text-center">
+                        <h5 class="media-heading">
+                          <i class="fa fa-phone" aria-hidden="true"></i> Phone:</h5 >
+                          IE: (+353) (0) 1 8081494
                     </div>
-                    <div class="col-md-4 partner">
-                        <a href="http://www.guaranteedirish.ie" target="_blank">
-                            <img class="img-responsive" src="{{ "/img/footer/partner-garanteed.png " | prepend: site.baseurl }}" alt="" />
-                        </a>
-                        <a href="https://aer.microsoft.com" target="_blank">
-                            <img class="img-responsive" src="{{ "/img/footer/partner-microsoft.png" | prepend: site.baseurl }}" alt="" />
-                        </a>
+                    <div class="col-md-4 text-center">
+                      <h5 class="media-heading">
+                        <i class="fa fa-envelope" aria-hidden="true"></i> Email:</h5>
+                              typ@4schools.ie
                     </div>
                 </div>
             </div>
@@ -61,14 +30,14 @@
                     <div class="col-md-5">
                         <p class="copyright text-left">
                           <img src="{{ "/img/footer/The-Examcraft-Group-Symbol-footer.png" | prepend: site.baseurl }}" alt="" />
-                          Copyright &copy; Learning Data 2016 <br> Part of The Examcraft Group | Registration No: 517572</p>
+                          Copyright &copy; 4Schools.ie Part of The Examcraft Group | Registration No: 362287
                     </div>
                     <div class="col-md-3"></div>
                     <div class="col-md-4">
                         <ul class="list-inline social-buttons">
                             {% for network in site.social %}
                                 <li>
-                                    <a href="{{ network.url }}">
+                                    <a href="{{ network.url }}" target="_blank">
                                         <i class="fa fa-{{ network.title }}"></i>
                                     </a>
                                 </li>
