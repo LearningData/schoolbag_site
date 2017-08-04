@@ -1,4 +1,4 @@
-Schoolbag one page site
+TYP one page site
 ====================
 
 To compile the project type "jekyll serve" - compiled files are in  '/_posts'
@@ -36,6 +36,6 @@ Configure settings for mail in /mail/contact_me.php
 Images are in '/img/footer'
 
 =========
-Schoolbag site was made using:
+TYP site was made using:
 Jekyll - more details, read [documentation](http://jekyllrb.com/)
 Bootstrap - more details, read [documentation](http://getbootstrap.com/)

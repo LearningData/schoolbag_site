@@ -2,9 +2,9 @@ url:
 baseurl: /welcome
 
 # Site settings
-title: TY Portfolio
-email: info@schoolbag.ie
-description: "Learning Data is a subsidiary of The Examcraft Group which has been providing products which support student learning to Irish schools for over 25 years."
+title: TYP - learning journeys
+email: typ@4schools.ie
+description: "4schools.ie is a trading name of The Examcraft Group which has been providing products which support student learning to Irish schools for over 25 years."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -16,36 +16,6 @@ color:
 # quotes:
 #   - text: It helps me be organised for my homework and keeps me on track. I use it every night to know what I have for homework
 #     author: Student
-#
-#   - text: Schoolbag really helped to keep me organised… it makes homework and assignments much easier to keep track of.
-#     author: Student
-#
-#   - text: Schoolbag allows me to receive my homework if I don’t get it in school
-#     author: Student
-#
-#   - text: Schoolbag gives me the ability to include resources and to be very specific with the homework I require… Students like the diary type layout of Schoolbag.
-#     author: Teacher, Elphin Community College
-#
-#   - text: I find Schoolbag an invaluable tool. It enables me to share homework and revision resources with my students and exam class now have access to extra questions that they can practice in their own time.
-#     author: Teacher, Coláiste Mhuire, Mullingar
-#
-#   - text: Schoolbag really helped to keep me organised… it makes homework and assignments much easier to keep track of.
-#     author: Student
-#
-#   - text: Many students have commented that this has helped to focus their revision and they like having the material available online instead of sheets of paper which they frequently misplace.
-#     author: Teacher, Coláiste Mhuire, Mullingar
-#
-#   - text: It’s very useful, I can put resources that students can access at home and I put on the homework too.
-#     author: Teacher, St Mary’s Macroom
-#
-#   - text: Parents know homework students get. Students know homework given if they are out sick or on extracurricular activities
-#     author: Teacher, Coláiste Phádraig CBS Lucan
-#
-#   - text: Enhances the way homework is distributed to students and builds a picture of how homework is being given and received
-#     author: Teacher, Elphin Community College
-#
-#   - text: Parents have direct access to their child’s homework. This gives parents a real idea of how well their child is participating in the homework process.
-#     author: Deputy Principal, Corran College
 
 
 # Team names, titles and social links
@@ -53,22 +23,17 @@ color:
 #   - name: Philip O'Callaghan
 #     pic: 1
 #     position: Managing Director
-#     about: Philip taught for 10 years in Naas CBS and St. David’s CBS, Artane. Since leaving the classroom he has been the managing director of Examcraft, the parent company of Schoolbag.
+#     about: Philip taught for 10 years in Naas CBS and St. David’s CBS, Artane. Since leaving the classroom he has been the managing director of Examcraft.
 #
 #   - name: Stuart Johnson
 #     pic: 2
 #     position: Technical Director
 #     about: Stuart holds a PhD in Physics from the University of Edinburgh. After gaining his PGCE teaching qualification, he taught first in the UK state system and then in a British school in Spain. He has over 10 years experience building software which helps schools.
 #
-#   - name: Amanda Ferris
-#     pic: 3
-#     position: Digital Education Product Specialist
-#     about: Amanda is a trained primary and secondary school teacher with a passion for educational technology, she provides support and training to our schools and teachers, and is in charge of product testing.
-#
 #   - name: Sidimar Gobbo
 #     pic: 4
 #     position: UX/UI Designer
-#     about: Sidimar is a self-taught UX/UI Designer with a passion for design and technology, he provides the design and digital experience for Schoolbag.
+#     about: Sidimar is a self-taught UX/UI Designer with a passion for design and technology, he provides the design and digital experience for TYP.
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
